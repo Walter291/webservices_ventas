@@ -52,7 +52,7 @@ El proyecto permite registrar ventas de productos, asignadas a un vendedor. El W
     </soapenv:Envelope>
     ```
 
-    También, aquí tienes un ejemplo de XML con un monto vendido:
+     ejemplo de XML con un monto vendido:
     ```xml
     <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
                       xmlns:pru="http://webservice.prueba/">
