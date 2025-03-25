@@ -36,20 +36,15 @@ El proyecto permite registrar ventas de productos, asignadas a un vendedor. El W
     - Llama al método `registrarVenta` del WebService para registrar una venta.
 
 4. **Ejemplo de XML para hacer la solicitud**:
-    Aquí tienes un ejemplo de XML para registrar una venta:
+    obtener reportes :
     ```xml
-    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                      xmlns:pru="http://webservice.prueba/">
-       <soapenv:Header/>
-       <soapenv:Body>
-          <pru:registrarVenta>
-             <venta>
-                <vendedorNombre>10370</vendedorNombre>
-                <codigoProducto>104</codigoProducto>
-             </venta>
-          </pru:registrarVenta>
-       </soapenv:Body>
-    </soapenv:Envelope>
+    <?xml version="1.0" encoding="UTF-8"?>
+ <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"
+            xmlns:tns="http://webservice.prueba/">
+    <S:Body>
+        <tns:obtenerReporteVentas/>
+    </S:Body>
+ </S:Envelope>
     ```
 
      ejemplo de XML con un monto vendido:
