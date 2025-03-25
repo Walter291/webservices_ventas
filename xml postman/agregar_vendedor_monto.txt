@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:pru="http://webservice.prueba/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pru:registrarVenta>
+         <venta>
+            <vendedorNombre>juan</vendedorNombre>
+            <codigoProducto>104</codigoProducto>
+            <montoVendido>1500.00</montoVendido>
+         </venta>
+      </pru:registrarVenta>
+   </soapenv:Body>
+</soapenv:Envelope>
