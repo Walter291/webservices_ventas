@@ -36,6 +36,7 @@ El proyecto permite registrar ventas de productos, asignadas a un vendedor. El W
     - Llama al método `registrarVenta` del WebService para registrar una venta.
 
 4. **Ejemplo de XML para hacer la solicitud**:
+    Aquí tienes un ejemplo de XML para registrar una venta:
     ```xml
     <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
                       xmlns:pru="http://webservice.prueba/">
@@ -50,19 +51,24 @@ El proyecto permite registrar ventas de productos, asignadas a un vendedor. El W
        </soapenv:Body>
     </soapenv:Envelope>
     ```
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-                  xmlns:pru="http://webservice.prueba/">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <pru:registrarVenta>
-         <venta>
-            <vendedorNombre>juan</vendedorNombre>
-            <codigoProducto>104</codigoProducto>
-            <montoVendido>1500.00</montoVendido>
-         </venta>
-      </pru:registrarVenta>
-   </soapenv:Body>
-</soapenv:Envelope>
+
+    También, aquí tienes un ejemplo de XML con un monto vendido:
+    ```xml
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                      xmlns:pru="http://webservice.prueba/">
+       <soapenv:Header/>
+       <soapenv:Body>
+          <pru:registrarVenta>
+             <venta>
+                <vendedorNombre>juan</vendedorNombre>
+                <codigoProducto>104</codigoProducto>
+                <montoVendido>1500.00</montoVendido>
+             </venta>
+          </pru:registrarVenta>
+       </soapenv:Body>
+    </soapenv:Envelope>
+    ```
+
 5. **Resultado**:
     - Si la venta se registra correctamente, el WebService devuelve un mensaje de éxito.
     - Si ocurre algún error (por ejemplo, problemas de conexión a la base de datos), se devuelve un mensaje de error.
@@ -73,3 +79,5 @@ El proyecto permite registrar ventas de productos, asignadas a un vendedor. El W
 - **VentaDAO.java**: Maneja la lógica de base de datos para registrar las ventas.
 - **WebService.java**: Expone el WebService para registrar las ventas remotamente.
 - **Procedimiento Almacenado**: Asegúrate de tener el procedimiento almacenado `RegistrarVentaCompleta` configurado en tu base de datos.
+
+
