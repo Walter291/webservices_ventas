@@ -50,7 +50,19 @@ El proyecto permite registrar ventas de productos, asignadas a un vendedor. El W
        </soapenv:Body>
     </soapenv:Envelope>
     ```
-
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:pru="http://webservice.prueba/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pru:registrarVenta>
+         <venta>
+            <vendedorNombre>juan</vendedorNombre>
+            <codigoProducto>104</codigoProducto>
+            <montoVendido>1500.00</montoVendido>
+         </venta>
+      </pru:registrarVenta>
+   </soapenv:Body>
+</soapenv:Envelope>
 5. **Resultado**:
     - Si la venta se registra correctamente, el WebService devuelve un mensaje de éxito.
     - Si ocurre algún error (por ejemplo, problemas de conexión a la base de datos), se devuelve un mensaje de error.
