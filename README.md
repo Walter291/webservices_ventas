@@ -54,7 +54,7 @@ El proyecto permite registrar ventas de productos, asignadas a un vendedor. El W
     ```
 
 5. ** obtener reporte de ventas**:
-    XML obtener reporteL:
+    XML obtener reporte:
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"
